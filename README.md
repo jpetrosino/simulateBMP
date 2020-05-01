@@ -1,5 +1,5 @@
 # simulateBMP
-Simulation Function based on k-Wave (toolbox of MATLAB) to simulate 2D acoustic wave propagation in air (audible range)
+MATLAB Function based on k-Wave to simulate 2D acoustic wave propagation in air (audible range)
 The acoustic space is defined by a picture (BMP file) using color codes to define sensors, sources, reflectant surfaces, and absorption materials. It was designed for maximum simplicity, but lets users modify multiple parameters such as the source signal, including múltiple sources with different signal definition, and the use of an audio signal to drive the sources.
 It is an improved version of simulateImage256() presented in ICA2019 (International Congress on Acoustics) on Aachen, Germany.
 "MATLAB-based simulation software as teaching aid for physical acoustics"
