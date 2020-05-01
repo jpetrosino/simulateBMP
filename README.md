@@ -9,7 +9,7 @@ Universidad Nacional de Lanus, Argentina
 http://pub.dega-akustik.de/ICA2019/data/articles/001342.pdf
 https://youtu.be/aKQ2G7RMh64
 
-At the moment, only a spanish document is presented here, but the paper or the youtube video and the 'hello world' sample scripts can be usefull.
+At the moment, only a spanish document is presented here, but the paper or the youtube video and the 'hello world' sample scripts can be useful to run simulations.
 
 Designed to work with the k-Wave toolbox, available for free at: 
 http://www.k-wave.org/
