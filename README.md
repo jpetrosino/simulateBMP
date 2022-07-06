@@ -13,3 +13,5 @@ At the moment, only a spanish document is presented here, but the paper or the y
 
 Designed to work with the k-Wave toolbox, available for free at: 
 http://www.k-wave.org/
+
+Installing kwave is very simple. After download the toolbox, include its directory to de Matlab pass (with subdirectories).
