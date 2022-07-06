@@ -1,7 +1,6 @@
 function [sensorData, t, dt, pVariable, lx, ly] = ...
           simulateBMP(imageFileName, scale, duration, ...
           simMedium, simSource,recordVideo)
-
 %%     simulateBMP  v3.0 2020 (upgrade from simulateImage256)
 %
 % [sensorData, t, dt, pVariable, lx, ly] = ...
@@ -295,7 +294,8 @@ end
 %REVIRAS XXXX 0.15/DT VÁLIDO PARA HOMOGÉNEO
 cMin=min(simMedium.c0,simMedium.c0*simMedium.speedRatio);
 fNyquist=cMin/2/dx;
-if not(isfield(simSource,'fCut')); simSource.fCut=fNyquist*75/86 ;end 
+if not(isfield(simSource,'fCut')); simSource.fCut=fNyquist*75/86;
+end 
 % For cMin=344 and dx=0.01; fNyquist=17200 Hz; fCut=15kHz
 if isfield(simSource,'fCorte'); ...
         simSource.fCut=simSource.fCorte;end % Se mantiene por compatibilidad
@@ -310,7 +310,8 @@ normfCut=simSource.fCut;
 %REVISAR: si se utiliza exactamente la fNyquist como fCut, entonces en el
 %ruido blanco o en el impulso existirá señal por encima de dicha frecuencia
 %que provocrá alias y quizás inestabilidad en las soluciones.
-if not(isfield(simSource,'order')); simSource.order=15;end
+if not(isfield(simSource,'order')); simSource.order=7;end
+%%%%%%%%%% CUIDADO! LA VERSIÓN SUBIDA A GITHUB TENÍA ORDEN 15
 %{
 if normfCut<20000
 %}    
