@@ -5,10 +5,10 @@
 % ------------------- Jorge Petrosino (june, 2022)
 clear; clc
 
-imageFileName='TubeModel_o.bmp';
+imageFileName='TubeModel_a.bmp';    
 
-scale=1e-2;
-duration=20e-3;
+scale=1e-3;
+duration=12e-3;
 simSource.type = 'impulse';
 simSource.amplitude = 100;      
 simSource.fCut=15000;
@@ -51,7 +51,7 @@ tglottal=0:dt48k:durationGlottal-dt48k;
 fglottal=(0:length(tglottal)-1)/length(tglottal)*fs48k;
 f0=100;
 if flagGlottal
-    q=4; 
+    q=6; 
     % Uses Rosenberg pulses
     glottalTrain=glottalSource(f0,durationGlottal,fs48k,q);
 else
