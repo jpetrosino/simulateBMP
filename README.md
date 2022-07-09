@@ -7,11 +7,17 @@ Jorge Petrosino, Lucas Landini, Georgina Lizaso, Ian Kuri, Ianina Canalis
 Universidad Nacional de Lanus, Argentina
 23rd International Congress on Acoustics, 2019.
 http://pub.dega-akustik.de/ICA2019/data/articles/001342.pdf
+This youTube video shows how it can be used
 https://youtu.be/aKQ2G7RMh64
-
-At the moment, only a spanish document is presented here, but the paper or the youtube video and the 'hello world' sample scripts can be useful to run simulations.
 
 Designed to work with the k-Wave toolbox, available for free at: 
 http://www.k-wave.org/
 
 Installing kwave is very simple. After download the toolbox, include its directory to de Matlab pass (with subdirectories).
+
+--------------------------
+To run samples, use helloWord.m
+
+--------------------------
+There are also samples using vocal-tract models in 2D. It runs the simulation, shows graphs of the signal and its spectrum and plays the sound.
+Use imageName='TubeModel_a.bmp', for example, and select writeAudioFile=true, for save audio file. Change imageName to 'TubeModel_e.bmp' or 'TubeModel_o.bmp' to compare results.
