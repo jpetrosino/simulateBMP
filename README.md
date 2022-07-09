@@ -21,3 +21,6 @@ To run samples, use helloWord.m
 --------------------------
 There are also samples using vocal-tract models in 2D. It runs the simulation, shows graphs of the signal and its spectrum and plays the sound.
 Use simulateModel.m with imageName='TubeModel_a.bmp', for example, and select writeAudioFile=true, for save audio file. Change imageName to 'TubeModel_e.bmp' or 'TubeModel_o.bmp' to compare results.
+
+Jorge Petrosino, june 2022
+Universidad Nacional de Lanus, Argentina
